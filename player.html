@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Player de Música</title>
+
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body>
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand brand-title" href="index.html">Produção Musical</a>
+      </div>
+    </header>
+
+    <main class="container py-5 text-white">
+      <!-- Botão para voltar à vitrine -->
+      <a href="index.html" class="btn btn-outline-light mb-4">
+        <i class="bi bi-arrow-left"></i> Voltar aos Lançamentos
+      </a>
+
+      <div class="row g-4">
+        <!-- Controles Principais do Player -->
+        <div class="col-12 col-lg-7">
+          <div class="card custom-card p-4 text-center">
+            <img id="player-cover" src="" class="img-fluid rounded mb-3 player-img mx-auto" alt="Capa">
+            <h3 id="player-title" class="fw-bold mb-1">--</h3>
+            <p id="player-artist" class="fs-5 mb-1 text-purple fw-semibold">--</p>
+            <p id="player-category" class="text-secondary small mb-4">--</p>
+
+            <audio id="audio-element" src=""></audio>
+
+            <!-- Botões Play / Pause / Avance -->
+            <div class="d-flex justify-content-center align-items-center gap-4 mb-4">
+              <button id="btn-prev" class="btn btn-link text-white fs-2 p-0"><i class="bi bi-skip-start-fill"></i></button>
+              <button id="btn-play-pause" class="btn btn-purple btn-lg rounded-circle px-3 py-2 fs-2"><i class="bi bi-play-fill" id="play-icon"></i></button>
+              <button id="btn-next" class="btn btn-link text-white fs-2 p-0"><i class="bi bi-skip-end-fill"></i></button>
+            </div>
+
+            <!-- Volume -->
+            <div class="d-flex align-items-center justify-content-center gap-2 w-75 mx-auto">
+              <i class="bi bi-volume-down-fill text-secondary"></i>
+              <input type="range" id="volume-control" class="form-range" min="0" max="1" step="0.01" value="0.8">
+              <i class="bi bi-volume-up-fill text-secondary"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Playlist Lateral -->
+        <div class="col-12 col-lg-5">
+          <div class="card custom-card p-3">
+            <h5 class="fw-bold mb-3 border-bottom border-secondary pb-2">Próximas Músicas</h5>
+            <div id="playlist-container" class="list-group list-group-flush"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="text-center py-4 text-secondary">
+      <p>&copy; 2026 - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="src/js/script.js"></script>
+  </body>
+</html>
