@@ -29,17 +29,10 @@ const projetos = [
   }
 ];
 
-let indiceAtual = 0;
-const audio = document.getElementById("audio-element");
-
-const viewPortfolio = document.getElementById("view-portfolio");
-const viewPlayer = document.getElementById("view-player");
-const btnPlayPause = document.getElementById("btn-play-pause");
-const playIcon = document.getElementById("play-icon");
-
-// Renderizar cards do portfólio
+// LÓGICA DO INDEX.HTML (Vitrine de Lançamentos)
 function renderizarPortfolio() {
   const container = document.getElementById("portfolio-grid");
+  if (!container) return; // Se não estiver na index, interrompe esta função
 
   const cardsHTML = projetos
     .map(
@@ -52,7 +45,7 @@ function renderizarPortfolio() {
           <h5 class="card-title fw-bold">${item.titulo}</h5>
           <p class="card-text fs-5 mb-0 fw-semibold">${item.cantor}</p>
           <p class="card-text flex-grow-1" style="color: #b589ceb8;">${item.descricao}</p>
-          <button onclick="abrirPlayer(${item.id})" class="btn btn-outline-light mt-auto">Ouvir Agora</button>
+          <a href="player.html?id=${item.id}" class="btn btn-outline-light mt-auto">Ouvir Agora</a>
         </div>
       </div>
     </div>
@@ -63,20 +56,51 @@ function renderizarPortfolio() {
   container.innerHTML = cardsHTML;
 }
 
-// Troca de Telas
-function abrirPlayer(id) {
-  viewPortfolio.classList.add("d-none");
-  viewPlayer.classList.remove("d-none");
-  carregarFaixa(id);
+// LÓGICA DO PLAYER.HTML
+let indiceAtual = 0;
+let audio = null;
+
+function inicializarPlayer() {
+  const audioElement = document.getElementById("audio-element");
+  if (!audioElement) return; // Se não estiver na página player.html, interrompe esta função
+
+  audio = audioElement;
+
+  // Pega o ID passado via parâmetro na URL (?id=0)
+  const urlParams = new URLSearchParams(window.location.search);
+  const idParam = parseInt(urlParams.get("id"));
+  
+  if (!isNaN(idParam) && idParam >= 0 && idParam < projetos.length) {
+    indiceAtual = idParam;
+  }
+
+  // Configuração dos Eventos dos Botões
+  const btnPlayPause = document.getElementById("btn-play-pause");
+  btnPlayPause.addEventListener("click", () => {
+    if (audio.paused) {
+      tocarAudio();
+    } else {
+      pausarAudio();
+    }
+  });
+
+  document.getElementById("btn-next").addEventListener("click", () => {
+    indiceAtual = (indiceAtual + 1) % projetos.length;
+    carregarFaixa(indiceAtual);
+  });
+
+  document.getElementById("btn-prev").addEventListener("click", () => {
+    indiceAtual = (indiceAtual - 1 + projetos.length) % projetos.length;
+    carregarFaixa(indiceAtual);
+  });
+
+  document.getElementById("volume-control").addEventListener("input", (e) => {
+    audio.volume = e.target.value;
+  });
+
+  carregarFaixa(indiceAtual);
 }
 
-document.getElementById("btn-voltar").addEventListener("click", () => {
-  audio.pause();
-  viewPlayer.classList.add("d-none");
-  viewPortfolio.classList.remove("d-none");
-});
-
-// Funções do Player de Áudio
 function carregarFaixa(index) {
   indiceAtual = index;
   const faixa = projetos[indiceAtual];
@@ -93,40 +117,18 @@ function carregarFaixa(index) {
 
 function tocarAudio() {
   audio.play();
-  playIcon.className = "bi bi-pause-fill";
+  document.getElementById("play-icon").className = "bi bi-pause-fill";
 }
 
 function pausarAudio() {
   audio.pause();
-  playIcon.className = "bi bi-play-fill";
+  document.getElementById("play-icon").className = "bi bi-play-fill";
 }
 
-btnPlayPause.addEventListener("click", () => {
-  if (audio.paused) {
-    tocarAudio();
-  } else {
-    pausarAudio();
-  }
-});
-
-document.getElementById("btn-next").addEventListener("click", () => {
-  indiceAtual = (indiceAtual + 1) % projetos.length;
-  carregarFaixa(indiceAtual);
-});
-
-document.getElementById("btn-prev").addEventListener("click", () => {
-  indiceAtual = (indiceAtual - 1 + projetos.length) % projetos.length;
-  carregarFaixa(indiceAtual);
-});
-
-// Controle de Volume
-document.getElementById("volume-control").addEventListener("input", (e) => {
-  audio.volume = e.target.value;
-});
-
-// Renderizar Lista Lateral
 function renderizarPlaylistLateral() {
   const container = document.getElementById("playlist-container");
+  if (!container) return;
+
   container.innerHTML = projetos
     .map(
       (item, index) => `
@@ -145,26 +147,8 @@ function renderizarPlaylistLateral() {
     .join("");
 }
 
-// Botão para instalar o App (PWA)
-let deferredPrompt;
-const btnInstall = document.getElementById("btn-install");
-
-window.addEventListener("beforeinstallprompt", (e) => {
-  e.preventDefault();
-  deferredPrompt = e;
-  btnInstall.classList.remove("d-none");
-  btnInstall.classList.add("d-flex");
+// Inicialização de acordo com a página carregada
+document.addEventListener("DOMContentLoaded", () => {
+  renderizarPortfolio();
+  inicializarPlayer();
 });
-
-btnInstall.addEventListener("click", async () => {
-  if (deferredPrompt) {
-    deferredPrompt.prompt();
-    const { outcome } = await deferredPrompt.userChoice;
-    if (outcome === 'accepted') {
-      btnInstall.classList.add("d-none");
-    }
-    deferredPrompt = null;
-  }
-});
-
-document.addEventListener("DOMContentLoaded", renderizarPortfolio);
