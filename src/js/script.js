@@ -26,6 +26,60 @@ const projetos = [
     descricao: "Co-produção e edição de bateria e baixo.",
     imagem: "https://i.discogs.com/aCpUjO5BbzGe3qj84tpTr9_nc4FsclmkFnQ3oFD7vn8/rs:fit/g:sm/q:90/h:600/w:596/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwMjU0/NTgtMTI1OTM1NTgy/MS5qcGVn.jpeg",
     audioSrc: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3"
+  },
+  {
+    id: 3,
+    titulo: "Single - Rolling in the Deep",
+    categoria: "Soul / Blues / POP / Gospel",
+    cantor: "Adele",
+    descricao: "",
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvVAyfSJgBqcXyOV9C3WAspbhCO2J0qRvhckCrOZL2qY1Ej3pHOg7GZNGj&s=10",
+    audioSrc: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3"
+  },
+   {
+    id: 4,
+    titulo: "Álbum - Divino",
+    categoria: " Rock (alternativo, indie e clássico) / Blues",
+    cantor: "Banda - Venere Vai Venlus",
+    descricao: "",
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPwJXICYfljSb-eIfV3_il9Ey8C-a4SSbO0CnQkxNPqg&s=10",
+    audioSrc: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3"
+  },
+   {
+    id: 5,
+    titulo: "Single - Espetáculo Estranho",
+    categoria: "MPB / Folk-POP",
+    cantor: "ANAVITÓRIA",
+    descricao: "",
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPaWOMduh1oJIAfnhdBQ1i1oKnH0X6lkDMAx1uwCIk_g&s=10",
+    audioSrc: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3"
+  },
+   {
+    id: 6,
+    titulo: "Single - Aurora",
+    categoria: "POP",
+    cantor: "Jão",
+    descricao: "",
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrXKGdU7CiN5kmMMoyhSzbWjEFxK6JA_mPlOLObMf3RQ&s=10",
+    audioSrc: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3"
+  },
+   {
+    id: 7,
+    titulo: "Single - Serenata Existencialista",
+    categoria: "Rock (Alternativo e indie)",
+    cantor: "O Grilo",
+    descricao: "",
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdvplcaDZPETYBBYD_J4Izyh_6VL0kcRMIwvY5L7ObQQ&s=10",
+    audioSrc: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3"
+  },
+   {
+    id: 8,
+    titulo: "Single - Circo",
+    categoria: "Rock Alternativo",
+    cantor: "Banda - Venere Vai Venus",
+    descricao: "",
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStY8gjVn-Z9tzE8so_G9rRcYkWZCN5pw_XO6VQ2r4cUQ&s=10",
+    audioSrc: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3"
   }
 ];
 
