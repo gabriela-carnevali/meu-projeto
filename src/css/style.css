@@ -1,0 +1,29 @@
+/* Customizações fora do escopo do Bootstrap */
+body {
+  background-color: #121212;
+  color: #f1f1f1;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Identidade visual única da marca */
+.brand-title {
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #ff0055 !important;
+}
+
+/* Customização para os cards injetados dinamicamente */
+.custom-card {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(255, 0, 85, 0.2);
+}
+
+.custom-badge {
+  background-color: #ff0055;
+}
