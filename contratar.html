@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contratar Produção Musical</title>
+
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body>
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container d-flex justify-content-between align-items-center">
+        <a class="navbar-brand brand-title" href="index.html">Produção Musical</a>
+        <a href="index.html" class="btn btn-outline-light btn-sm">
+          <i class="bi bi-house-fill me-1"></i> Início
+        </a>
+      </div>
+    </header>
+
+    <main class="container py-5 text-white">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8">
+          <div class="card custom-card p-4 p-md-5">
+            <h2 class="text-center fw-bold mb-2 text-white">Contratar Produção</h2>
+            <p class="text-center text-secondary mb-4">Preencha os detalhes do seu projeto para alinharmos a produção.</p>
+
+            <form id="form-contratar">
+              <div class="row g-3">
+                <!-- Nome do Cantor -->
+                <div class="col-12 col-md-6">
+                  <label for="cantor" class="form-label text-white">Cantor(a) / Artista</label>
+                  <input type="text" class="form-control bg-dark text-white border-secondary" id="cantor" placeholder="Ex: Bea Duarte" required />
+                </div>
+
+                <!-- Nome da Música -->
+                <div class="col-12 col-md-6">
+                  <label for="nomeMusica" class="form-label text-white">Nome da Música</label>
+                  <input type="text" class="form-control bg-dark text-white border-secondary" id="nomeMusica" placeholder="Ex: Minha Nova Faixa" required />
+                </div>
+
+                <!-- Categoria Musical -->
+                <div class="col-12 col-md-6">
+                  <label for="categoria" class="form-label text-white">Categoria Musical</label>
+                  <input type="text" class="form-control bg-dark text-white border-secondary" id="categoria" placeholder="Ex: Indie POP / R&B" required />
+                </div>
+
+                <!-- Foto de Ideia para Capa (Apenas png, jpeg, jpg) -->
+                <div class="col-12 col-md-6">
+                  <label for="fotoCapa" class="form-label text-white">Ideia para a Capa (.png, .jpg, .jpeg)</label>
+                  <input type="file" class="form-control bg-dark text-white border-secondary" id="fotoCapa" accept=".png, .jpg, .jpeg, image/png, image/jpeg" />
+                </div>
+
+                <!-- O que quer que seja produzido -->
+                <div class="col-12">
+                  <label for="descricaoProducao" class="form-label text-white">O que você deseja que seja produzido?</label>
+                  <textarea class="form-control bg-dark text-white border-secondary" id="descricaoProducao" rows="4" placeholder="Descreva os serviços necessários: arranjo, captação de voz, mixagem, masterização, etc." required></textarea>
+                </div>
+
+                <!-- Botão Enviar -->
+                <div class="col-12 mt-4 text-end">
+                  <button type="submit" class="btn btn-purple btn-lg w-100 fw-semibold">
+                    Enviar Solicitação
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="text-center py-4 text-secondary">
+      <p>&copy; 2026 - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="src/js/script.js"></script>
+  </body>
+</html>
