@@ -38,13 +38,15 @@ function renderizarPortfolio() {
     <div class="col-12 col-md-6 col-lg-4">
       <div class="card h-100 custom-card text-white">
         <img src="${item.imagem}" class="card-img-top" alt="${item.titulo}">
-        <div class="card-body d-flex flex-column">
-          <span class="badge custom-badge w-auto mb-2 align-self-start">${item.categoria}</span>
-          <h5 class="card-title fw-bold">${item.titulo}</h5>
-          <p class="card-text fs-5 fw-semibold">${item.cantor}</p>
-          <p class="card-text text-$purple-200 flex-grow-1">${item.descricao}</p>
-          <a href="${item.link}" class="btn btn-outline-light mt-auto">Ouvir Agora</a>
+       <div class="card-body d-flex flex-column">
+        <span class="badge custom-badge w-auto mb-2 align-self-start">${item.categoria}</span>
+        <h5 class="card-title fw-bold">${item.titulo}</h5>
+        <!-- Correção aplicada na linha abaixo -->
+        <p class="card-text fs-5 mb-0 fw-semibold">${item.cantor}</p>
+        <p class="card-text flex-grow-1" style="color: #b589ceb8;">${item.descricao}</p>
+        <a href="${item.link}" class="btn btn-outline-light mt-auto">Ouvir Agora</a>
         </div>
+
       </div>
     </div>
   `,
