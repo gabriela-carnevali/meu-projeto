@@ -25,9 +25,48 @@ body {
 }
 
 .custom-badge {
-  background-color: #d29eee
+  background-color: #d29eee;
+  color: #121212;
 }
 
-.card-text {
-    color: #9940c9,
+.text-purple {
+  color: #d29eee;
+}
+
+.btn-purple {
+  background-color: #d29eee;
+  color: #121212;
+  border: none;
+}
+
+.btn-purple:hover {
+  background-color: #b589ce;
+  color: #121212;
+}
+
+/* Estilos do Player */
+.player-img {
+  max-width: 250px;
+  max-height: 250px;
+  object-fit: cover;
+  box-shadow: 0 10px 25px rgba(210, 158, 238, 0.2);
+}
+
+.playlist-item {
+  background-color: transparent;
+  color: #fff;
+  border-color: #333;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.playlist-item:hover {
+  background-color: #2a2a2a;
+  color: #d29eee;
+}
+
+.playlist-item.active {
+  background-color: #d29eee !important;
+  color: #121212 !important;
+  border-color: #d29eee;
 }
