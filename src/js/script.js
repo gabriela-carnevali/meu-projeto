@@ -7,7 +7,8 @@ const projetos = [
     cantor: "Bea Duarte",
     descricao: "Produção completa de mixagem e masterização para o álbum de estreia.",
     imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZCsGM43TJh1JWo1fvEVSsG_E0UcW-hRqmOnRrZfMdugaP8H2WCneVK70R&s=10",
-    audioSrc: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+    audioSrc: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+    bio: "Bea Duarte é uma cantora e compositora brasileira emergente na cena indie, destacando-se por harmonias vocais expressivas e pela fusão de ritmos latinos com R&B e POP."
   },
   {
     id: 1,
@@ -16,7 +17,8 @@ const projetos = [
     cantor: "Demi Lovato",
     descricao: "Captação de áudio ao vivo com voz e piano",
     imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVdQyVWK0BhDbr8N_OqiIUtgvyV0mDrnw3fK8URvXwmUTk7zxCcMglETo&s=10",
-    audioSrc: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"
+    audioSrc: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
+    bio: "Demi Lovato é uma aclamada cantora e compositora norte-americana com alcance vocal poderoso, reconhecida globalmente por seus sucessos no POP moderno e R&B soul."
   },
   {
     id: 2,
@@ -25,68 +27,75 @@ const projetos = [
     cantor: "Christina Aguilera",
     descricao: "Co-produção e edição de bateria e baixo.",
     imagem: "https://i.discogs.com/aCpUjO5BbzGe3qj84tpTr9_nc4FsclmkFnQ3oFD7vn8/rs:fit/g:sm/q:90/h:600/w:596/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwMjU0/NTgtMTI1OTM1NTgy/MS5qcGVn.jpeg",
-    audioSrc: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3"
+    audioSrc: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3",
+    bio: "Christina Aguilera é uma cantora e vencedora do Grammy famosa por sua versatilidade e alcance vocal, marcando época no POP e transitando pelo Jazz e Swing vintage."
   },
   {
     id: 3,
     titulo: "Single - Rolling in the Deep",
     categoria: "Soul / Blues / POP / Gospel",
     cantor: "Adele",
-    descricao: "",
+    descricao: "Arranjo musical completo e gravação de guitarras acústicas e elétricas.",
     imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvVAyfSJgBqcXyOV9C3WAspbhCO2J0qRvhckCrOZL2qY1Ej3pHOg7GZNGj&s=10",
-    audioSrc: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3"
+    audioSrc: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3",
+    bio: "Adele é uma das artistas de maior vendagem no mundo, aclamada por sua voz mezzo-soprano marcante e composições emotivas no estilo Soul, Blues e POP."
   },
-   {
+  {
     id: 4,
     titulo: "Álbum - Divino",
     categoria: " Rock (alternativo, indie e clássico) / Blues",
     cantor: "Banda - Venere Vai Venlus",
-    descricao: "",
+    descricao: "Criação de beats, sintetizadores e design sonoro para música eletrônica.",
     imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPwJXICYfljSb-eIfV3_il9Ey8C-a4SSbO0CnQkxNPqg&s=10",
-    audioSrc: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3"
+    audioSrc: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3",
+    bio: "Venere Vai Venlus é um projeto de Rock nacional que mescla a pegada clássica e o rock alternativo a texturas sintetizadas e elementos modernos do Indie."
   },
-   {
+  {
     id: 5,
     titulo: "Single - Espetáculo Estranho",
     categoria: "MPB / Folk-POP",
     cantor: "ANAVITÓRIA",
-    descricao: "",
+    descricao: "Gravação, edição e afinação profissional de vozes para single.",
     imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPaWOMduh1oJIAfnhdBQ1i1oKnH0X6lkDMAx1uwCIk_g&s=10",
-    audioSrc: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3"
+    audioSrc: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3",
+    bio: "ANAVITÓRIA é um duo musical brasileiro referência do Folk-POP e MPB, conhecido pelas melodias suaves, poesias do cotidiano e harmonias vocais marcantes."
   },
-   {
+  {
     id: 6,
     titulo: "Single - Aurora",
     categoria: "POP",
     cantor: "Jão",
-    descricao: "",
+    descricao: "Pré-produção, estruturação harmônica e direção artística de projeto musical.",
     imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrXKGdU7CiN5kmMMoyhSzbWjEFxK6JA_mPlOLObMf3RQ&s=10",
-    audioSrc: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3"
+    audioSrc: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3",
+    bio: "Jão é um cantor e compositor brasileiro destaque na cena POP contemporânea, famoso por suas apresentações performáticas e narrativas passionais em suas músicas."
   },
-   {
+  {
     id: 7,
     titulo: "Single - Serenata Existencialista",
     categoria: "Rock (Alternativo e indie)",
     cantor: "O Grilo",
-    descricao: "",
+    descricao: "Reamptilficação de instrumentos, mixagem e pós-produção áudio para rock.",
     imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdvplcaDZPETYBBYD_J4Izyh_6VL0kcRMIwvY5L7ObQQ&s=10",
-    audioSrc: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3"
+    audioSrc: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3",
+    bio: "O Grilo é uma banda brasileira de Rock Alternativo que mistura letras reflexivas, groove dançante e arranjos criativos com forte influência da brasilidade."
   },
-   {
+  {
     id: 8,
     titulo: "Single - Circo",
     categoria: "Rock Alternativo",
     cantor: "Banda - Venere Vai Venus",
-    descricao: "",
+    descricao: "Restauração de áudio, limpeza de ruídos e masterização para streaming.",
     imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStY8gjVn-Z9tzE8so_G9rRcYkWZCN5pw_XO6VQ2r4cUQ&s=10",
-    audioSrc: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3"
+    audioSrc: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3",
+    bio: "Venere Vai Venus explora o Rock Alternativo com timbres densos, distorções expressivas e temáticas teatrais envolvidas por um design sonoro marcante."
   }
 ];
 
 // LÓGICA DO INDEX.HTML (Vitrine de Lançamentos)
 function renderizarPortfolio() {
   const container = document.getElementById("portfolio-grid");
-  if (!container) return; // Se não estiver na index, interrompe esta função
+  if (!container) return; // Se não estiver na index, interrompe
 
   const cardsHTML = projetos
     .map(
@@ -99,7 +108,14 @@ function renderizarPortfolio() {
           <h5 class="card-title fw-bold">${item.titulo}</h5>
           <p class="card-text fs-5 mb-0 fw-semibold">${item.cantor}</p>
           <p class="card-text flex-grow-1" style="color: #b589ceb8;">${item.descricao}</p>
-          <a href="player.html?id=${item.id}" class="btn btn-outline-light mt-auto">Ouvir Agora</a>
+          
+          <!-- BOTÕES AQUI NA TELA INICIAL (INDEX) -->
+          <div class="d-flex gap-2 mt-auto">
+            <a href="player.html?id=${item.id}" class="btn btn-outline-light flex-fill">Ouvir Agora</a>
+            <a href="artista.html?cantor=${encodeURIComponent(item.cantor)}" class="btn btn-purple d-flex align-items-center gap-1">
+              <i class="bi bi-person-badge"></i> Biografia
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -116,11 +132,10 @@ let audio = null;
 
 function inicializarPlayer() {
   const audioElement = document.getElementById("audio-element");
-  if (!audioElement) return; // Se não estiver na página player.html, interrompe esta função
+  if (!audioElement) return; // Se não estiver no player.html, interrompe
 
   audio = audioElement;
 
-  // Pega o ID passado via parâmetro na URL (?id=0)
   const urlParams = new URLSearchParams(window.location.search);
   const idParam = parseInt(urlParams.get("id"));
   
@@ -128,7 +143,6 @@ function inicializarPlayer() {
     indiceAtual = idParam;
   }
 
-  // Configuração dos Eventos dos Botões
   const btnPlayPause = document.getElementById("btn-play-pause");
   btnPlayPause.addEventListener("click", () => {
     if (audio.paused) {
@@ -163,6 +177,13 @@ function carregarFaixa(index) {
   document.getElementById("player-title").innerText = faixa.titulo;
   document.getElementById("player-artist").innerText = faixa.cantor;
   document.getElementById("player-category").innerText = faixa.categoria;
+  
+  // Atualiza o link do botão de Biografia dentro do Player
+  const btnBio = document.getElementById("btn-artista-bio");
+  if (btnBio) {
+    btnBio.href = `artista.html?cantor=${encodeURIComponent(faixa.cantor)}`;
+  }
+
   audio.src = faixa.audioSrc;
 
   renderizarPlaylistLateral();
@@ -201,8 +222,38 @@ function renderizarPlaylistLateral() {
     .join("");
 }
 
-// Inicialização de acordo com a página carregada
+// LÓGICA DO FORMULÁRIO DE CONTRATAÇÃO
+function inicializarFormulario() {
+  const form = document.getElementById("form-contratar");
+  if (!form) return;
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    alert("Solicitação enviada com sucesso!");
+    form.reset();
+  });
+}
+
+// LÓGICA DA TELA DE BIOGRAFIA (artista.html)
+function inicializarArtista() {
+  const nomeEl = document.getElementById("artista-nome");
+  if (!nomeEl) return;
+
+  const urlParams = new URLSearchParams(window.location.search);
+  const cantorParam = urlParams.get("cantor");
+
+  const artista = projetos.find(p => p.cantor === cantorParam) || projetos[0];
+
+  document.getElementById("artista-foto").src = artista.imagem;
+  document.getElementById("artista-nome").innerText = artista.cantor;
+  document.getElementById("artista-genero").innerText = artista.categoria;
+  document.getElementById("artista-bio").innerText = artista.bio;
+}
+
+// Inicialização de acordo com a página
 document.addEventListener("DOMContentLoaded", () => {
   renderizarPortfolio();
   inicializarPlayer();
+  inicializarFormulario();
+  inicializarArtista();
 });
