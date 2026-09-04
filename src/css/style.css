@@ -9,7 +9,7 @@ body {
 .brand-title {
   font-weight: 800;
   letter-spacing: 2px;
-  color: #ff0055 !important;
+  color: #d29eee !important;
 }
 
 /* Customização para os cards injetados dinamicamente */
@@ -21,9 +21,14 @@ body {
 
 .custom-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(255, 0, 85, 0.2);
+  box-shadow: 0 8px 20px rgba(233, 169, 233, 0.2);
 }
 
 .custom-badge {
-  background-color: #ff0055;
+  background-color: #d29eee
+}
+
+.card-text {
+    color: #9940c9,
+
 }
